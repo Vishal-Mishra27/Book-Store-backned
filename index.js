@@ -17,10 +17,7 @@ const PORT=4001;
 // Connect to mongodb
 const mongoDBURL="mongodb://localhost:27017/bookstore";
 try {
-  mongoose.connect(mongoDBURL,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  });
+  mongoose.connect(mongoDBURL);
   console.log("Connected to MongoDB");
 } catch (error) {
   console.log("Error...!! on Connection with MongoDB");
