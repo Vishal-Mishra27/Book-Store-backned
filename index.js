@@ -12,7 +12,7 @@ app.use(express.json());
 
 
 dotenv.config();
-const PORT=4001;
+const PORT= process.env.PORT || 4001 ;
 
 // Connect to mongodb
 const mongoDBURL="mongodb://localhost:27017/bookstore";
