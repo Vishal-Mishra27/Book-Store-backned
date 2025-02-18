@@ -15,7 +15,8 @@ dotenv.config();
 const PORT= process.env.PORT || 4001 ;
 
 // Connect to mongodb
-const mongoDBURL="mongodb://localhost:27017/bookstore";
+// const mongoDBURL= "mongodb://localhost:27017/bookstore";
+const mongoDBURL= process.env.MongoDBURI;
 try {
   mongoose.connect(mongoDBURL);
   console.log("Connected to MongoDB");
